@@ -8,6 +8,10 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+
+    &:nth-last-of-type(-n+2) {
+      height: 500px;
+    }
   
     &:hover {
       cursor: pointer;
@@ -20,10 +24,6 @@
       .category-body-container {
         opacity: 0.9;
       }
-    }
-  
-    &.large {
-      height: 380px;
     }
   
     &:first-child {
