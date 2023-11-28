@@ -9,12 +9,12 @@ export const CartIcon = () => {
 
     const ToggleIsCartOpen = () => setIsCartOpen(!isCartOpen)
 
-
+    const { cartCount } = useContext(CartContext)
 
     return(
         <div className="cart-icon-container" onClick={ToggleIsCartOpen}>
             <ShoppingIcon className="shopping-icon" />
-            <span className="item-count">0</span>
+            <span className="item-count">{cartCount}</span>
         </div>
     )
 }
